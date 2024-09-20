@@ -2,24 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>/ex/ex2</title>
+    <title>Title</title>
 </head>
 <body>
-    <div th:text="${list}"></div>
-    <div th:text="${map}"></div>
-    <div th:text="${dto}"></div>
+<div th:text="${list}"></div>
+<div th:text="${map}"></div>
+<div th:text="${dto}"></div>
+
 <script th:inline="javascript">
-         const list = [[${list}]]
-         const map = [[${map}]]
-         const dto = [[${dto}]]
 
-        alert(list);
-         console.log(list)
-        alert(map);
-         console.log(map)
-        alert(dto);
-         console.log(dto)
+    const list = [[${list}]]
 
+    const map = [[${map}]]
+
+    const dto = [[${dto}]]
+
+    console.log(list)
+    console.log(map)
+    console.log(dto)
 
 </script>
 
